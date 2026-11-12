@@ -68,6 +68,13 @@ footer{padding:28px 0 70px;color:#a6bdd1;text-align:center;font-size:.84rem;bord
 .story-call{font-size:1.02rem!important;color:#ffe4d9!important;font-weight:650}
 .primary-jump{display:inline-block;margin:13px 0 7px;background:#1d749a;color:#fff;border:1px solid #6fc8e8;border-radius:10px;padding:10px 17px;text-decoration:none;font-weight:800}
 .primary-jump:hover{background:#278db4}
+
+/* The two original photographs sit side-by-side at every screen size. */
+.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:960px;margin-inline:auto;gap:12px;align-items:start;justify-content:center}
+.photo-gallery figure{min-width:0;padding:8px}
+.photo-gallery img{width:100%;height:clamp(175px,25vw,310px);max-height:none;object-fit:contain}
+.photo-gallery figcaption{font-size:.85rem;line-height:1.5}
+@media(max-width:700px){.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.photo-gallery figure{padding:5px}.photo-gallery img{height:clamp(135px,41vw,225px)}.photo-gallery figcaption{font-size:.72rem}.photo-gallery a{padding:5px 3px;font-size:.74rem}}
 </style></head>
 <body>
 <div class="topnote">🚨 هشدار فوری · تا ۲۱ آبان ۱۴۰۵ / ۱۲ نوامبر ۲۰۲۶: حکم اعدام پیمان فرح‌آور تأیید و پرونده به اجرای احکام ارجاع شده است؛ تاریخ مشخص اعدام گزارش نشده است.</div>
